@@ -8,7 +8,7 @@ def euclidean(a,b):
     else:
         print "There's no point in doing this."
 
-#know that we know which is the divisor and which is the dividend we can
+#now that we know which is the divisor and which is the dividend we can
 #begin dividing and analyzing them.
     while dividend%divisor !=0:
         quotient = dividend / divisor
@@ -28,4 +28,5 @@ def euclidean(a,b):
         else:
             pass;
 
+#test case
 print euclidean(110,20)
