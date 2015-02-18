@@ -1,8 +1,8 @@
-def euclidean(a,b):
-    if a<b:
+def euclidean(a, b):
+    if a < b:
         divisor = a
         dividend = b
-    elif b<a:
+    elif b < a:
         divisor = b
         dividend = a
     else:
@@ -10,23 +10,23 @@ def euclidean(a,b):
 
 #now that we know which is the divisor and which is the dividend we can
 #begin dividing and analyzing them.
-    while dividend%divisor !=0:
+    while dividend % divisor != 0:
         quotient = dividend / divisor
         remainder = dividend % divisor
         if remainder == 0:
             gcd = quotient
-            print "Your greatest common divisor is %d" %(gcd)
+            print "Your greatest common divisor is %d" % (gcd)
             break;
         elif remainder != 0:
-            newDividend=divisor
-            newDivisor=dividend
-            newRemainder=remainder
+            new_dividend = divisor
+            new_divisor = dividend
+            new_remainder = remainder
             dividend = divisor
             divisor = remainder
             remainder = divisor/remainder
-            print "your greatest common divisor is %d" %(newRemainder)
+            print "your greatest common divisor is %d" % (new_remainder)
         else:
-            pass;
+            pass
 
 #test case
 print euclidean(110,20)
